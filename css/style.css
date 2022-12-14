@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+.debug [class^='col'] {
+    border: 2px dashed black;
+    padding: 5px;
+}
+.debug .container-head1 > .header1 {
+    background-color: pink;
+}
+.debug .header1{
+    background-color: darkgoldenrod;
+}
+.debug .container-head1{
+    min-height: 50px;
+    padding: 15px;
+}
+.debug .container-head2 > .header2{
+    background-color: pink;
+    border: 2px dashed black;
+
+}
+.debug .header2{
+    background-color: blue;
+    min-height: 300px;
+}
+
+.debug .container-head2{
+    padding: 15px;
+}
+
+
+.container-head1{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row .col-logo{
+    flex-basis: 25%;
+}
+
+.row .col-link{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.row .col-login{
+    flex-basis: 25%;
+    text-align: end;
+}
+
+
+.container-head2{
+    max-width: 600px;
+    margin: 0 auto;
+}
