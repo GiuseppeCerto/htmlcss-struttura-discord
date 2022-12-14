@@ -6,37 +6,98 @@
 img{
     max-width: 100%;
 }
-.debug [class^='col'] {
-    border: 2px dashed black;
+.debug .container1{
+    min-height: 50px;
+    padding: 20px;
+}
+.debug .container1 > .header1 {
+    background-color:darkgoldenrod;
     padding: 5px;
 }
-.debug .container-head1 > .header1 {
-    background-color: pink;
-}
 .debug .header1{
-    background-color: darkgoldenrod;
-}
-.debug .container-head1{
-    min-height: 50px;
-    padding: 15px;
-}
-.debug .container-head2 > .header2{
     background-color: pink;
-    border: 2px dashed black;
-
 }
+
 .debug .header2{
     background-color: blue;
     min-height: 300px;
 }
+.debug .container2 > .header2{
+    background-color: pink;
+    border: 1px dashed black;
 
-.debug .container-head2{
-    padding: 15px;
+}
+.debug .container2{
+    padding: 20px;
+    
+}
+
+.debug .main1{
+    min-height: 300px;
+}
+.debug .main2{
+    min-height: 300px;
+}
+.debug .section2{
+    background-color: lightseagreen;
+}
+.debug .col-main1{
+    background-color: lightblue;
+    border: 1px dashed black;
+}
+.debug .col-main2{
+    background-color: blueviolet;
+    border: 1px dashed black;
+}
+.debug .main3{
+    min-height: 450px;
+}
+.debug .col-main3{
+    background-color: olive;
+    border: 1px dashed black;
+}
+.debug .section3{
+    background-color: gray;
+}
+.debug .foot1{
+    min-height: 350px;
+}
+.debug .col-foot1{
+    background-color: crimson;
+    border: 1px dashed black;
+}
+.debug .col-foot2{
+    background-color: cyan;
+    border: 1px dashed black;
+}
+.debug .section4{
+    background-color: gray;
+    margin-top: 1px;
+}
+.debug .foot2{
+    background-color: white;
+    border: 1px dashed black;
+    min-height: 40px;
+}
+.debug .col-foot3{
+    background-color: bisque;
+    border: 1px dashed black;
+}
+.debug .col-foot4{
+    background-color: bisque;
+    border: 1px dashed black;
 }
 
 
-.container-head1{
+
+
+.container1{
     max-width: 800px;
+    margin: 0 auto;
+}
+
+.container2{
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -59,8 +120,43 @@ img{
     text-align: end;
 }
 
+.row .col-main1{
+    flex-basis: 60%;
+}
 
-.container-head2{
-    max-width: 600px;
-    margin: 0 auto;
+.row .col-main2{
+    flex-basis: 40%;
+}
+
+.main2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.row .col-main3{
+    flex-basis: 100%;
+}
+
+.foot1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row .col-foot1{
+    flex-basis: calc((100% / 12)* 4)
+}
+
+.row .col-foot2{
+    flex-basis: calc((100% / 12) * 2)
+}
+
+.foot2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.row .col-foot3{
+
 }
