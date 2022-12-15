@@ -10,28 +10,25 @@ img{
     min-height: 50px;
     padding: 20px;
 }
-.debug .container1 > .header1 {
+.debug .header1 {
     background-color:darkgoldenrod;
     padding: 5px;
 }
-.debug .header1{
+.debug .head1{
     background-color: pink;
-}
-
-.debug .header2{
-    background-color: blue;
-    min-height: 300px;
-}
-.debug .container2 > .header2{
-    background-color: pink;
-    border: 1px dashed black;
-
 }
 .debug .container2{
     padding: 20px;
-    
 }
 
+.debug .head2{
+    background-color: blue;
+}
+.debug .header2{
+    background-color: pink;
+    border:  1px dashed black;
+    min-height: 250px;
+}
 .debug .main1{
     min-height: 300px;
 }
@@ -95,31 +92,29 @@ img{
     max-width: 800px;
     margin: 0 auto;
 }
-
 .container2{
     max-width: 600px;
     margin: 0 auto;
 }
-
 .row{
     display: flex;
     flex-wrap: wrap;
 }
-
 .row .col-logo{
     flex-basis: 25%;
 }
-
 .row .col-link{
     flex-basis: 50%;
     text-align: center;
 }
-
 .row .col-login{
     flex-basis: 25%;
     text-align: end;
 }
 
+.col-header{
+    flex-basis: 100%;
+}
 .row .col-main1{
     flex-basis: 60%;
 }
@@ -137,12 +132,6 @@ img{
 .row .col-main3{
     flex-basis: 100%;
 }
-
-.foot1{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .row .col-foot1{
     flex-basis: calc((100% / 12)* 4)
 }
@@ -151,12 +140,9 @@ img{
     flex-basis: calc((100% / 12) * 2)
 }
 
-.foot2{
+.row .foot2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-}
-.row .col-foot3{
-
 }
